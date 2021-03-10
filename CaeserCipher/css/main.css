@@ -1,0 +1,146 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: 1px; 
+}
+header{
+    height: 350px;
+    background-color: #202020;
+}
+#logo{
+    height: 70px;
+    width: 70px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.name{
+    font-family: 'Grenze Gotisch', cursive;
+    color: white;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 43%;
+    width: 300px;
+    float: right;
+}
+.abt{
+    font-family: 'Cormorant Infant', serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+#first{
+    background-color: #505050;
+    height: 1700px;
+    width: 100%;
+    margin: 0;
+    padding-top: 100px;
+}
+#second{
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 1600px;
+    width: auto;
+    background-color: white;
+    border: 5px solid #202020;
+    border-radius: 50px;
+}
+#second p{
+    font-family: 'Comfortaa', cursive;
+    color: #707981;
+    text-align: center;
+    margin-bottom: 0;
+}
+#text{
+    font-weight: 500;
+    font-size: 27px;
+}
+.s-text{
+    font-weight: 400;
+    font-size: 22px;
+}
+.caesar{
+    position: relative;
+    width: 450px;
+    margin: 10px auto 0;
+    border-radius: 30px;
+}
+#num{
+    width: 80px;
+}
+.l-in{
+    padding: 50px 50px 50px 0;
+}
+#fst, #scd{
+    display: inline-block;
+}
+#fst{
+    margin-left: 210px;
+    float: left;
+}
+#scd{
+    margin-right: 210px;
+    float: right;
+}
+.l-in input, .l-in textarea{
+    padding: 0 20px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Comfortaa', cursive;
+    resize: none;
+    outline: none;
+}
+.l-in textarea{
+    display: block;
+    background: #E9EFF6;
+    padding-top: 0.5em;
+    line-height: 0.9em;
+}
+.l-in input[type ="button"], .l-in input[type="submit"]{
+    margin-top: 30px;
+    background:#808080;
+    border-bottom: 4px solid #303030;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+}
+.l-in input[type ="number"]{
+    display: block;
+    border: 2px solid #303030;
+}
+.encrypt{
+    margin-left: 20px;
+}
+.decrypt{
+    float: right;
+    margin-right: 20px;
+}
+#next{
+    margin-top: 670px;
+}
+.save, #show{
+    margin-left: 140px;
+}
+#show{
+    margin-bottom: 30px;
+}
+#pin{
+    margin-left: 100px;
+}
+footer{
+    text-align: center;
+    font-size: 38px;
+    background-color: red;
+    color: black;
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    height: 40px;
+    width: auto;
+    padding-top: 7px;
+}
+footer p{
+    margin: 0;
+}

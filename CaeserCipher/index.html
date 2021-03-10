@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Caesar</title>
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="shortcut icon" href=img\icon.png type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Infant:wght@700&family=Grenze+Gotisch:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"> <img src="img/logo.png" id="logo"></a>
+        <h1 class="name">
+            Caesar
+        </h1>
+        <p class="abt">
+            Зашифруем любой текст для Вас. <br> Все, что Вам нужно - ввести соответствие и текст (его можно продиктовать). 
+        </p>
+    </header>
+    <section id="first">
+        <div id="second">
+            <p id="text">
+                В полях ниже Вы можете ввести текст или продиктовать его, зашифровать,<br> сохранить его и открыть, когда Вам потребуется.
+            </p>
+            <p class="s-text">
+                Пожалуйста, введите смещение шифра (1-32).
+            </p>
+            <form class="caesar" id="num">
+                <div class="l-in">
+                    <input type="number" id="shift" min="1" max="32">
+                </div>
+            </form>
+            <p class="s-text">
+                Введите или продиктуйте текст.
+            </p>
+            <form class="caesar" id="fst">
+                <div class="l-in">
+                    <textarea id="speech" placeholder="Нажмите, что бы записать..." rows="10" cols="50"  onclick="record()"></textarea>
+                    <textarea id="out" placeholder="Здесь появится шифр" rows="10" cols="50" readonly></textarea>
+                    <input type="button" class="encrypt" id="enc1" value="Зашифровать" onclick="encrypt1()">
+                    <input type="button" class="decrypt" id="dec1" value="Дешифровать" onclick="decrypt1()">
+                    <input type="button" class="save" id="sav1" value="Сохранить" onclick="save1()">
+                </div>
+                <script src="js/SRecognition.js"></script>
+            </form>
+            <form class="caesar" id="scd">
+                <div class="l-in">
+                    <textarea id="in" placeholder="Введите текст..." rows="10" cols="50"></textarea>
+                    <textarea id="out2" placeholder="Здесь появится шифр" rows="10" cols="50" readonly></textarea>
+                    <input type="button" class="encrypt" id="enc2" value="Зашифровать" onclick="encrypt2()">
+                    <input type="button" class="decrypt" id="dec2" value="Дешифровать" onclick="decrypt2()">
+                    <input type="button" class="save" id="sav2" value="Сохранить" onclick="save2()">
+                </div>
+            </form>
+            <script src="js/Caeser.js"></script>
+            <p class="s-text" id="next">
+                Если хотите восстановить шифр, пожалуйста, введите его ID ниже.
+            </p>
+            <form class="caesar">
+                <div class="l-in">
+                    <input type="number" id="pin">
+                    <input type="button" id="show" value="Показать" onclick="showE()">                        
+                    <textarea id="cipher" placeholder="Здесь появится шифр" rows="14" cols="50" readonly></textarea>
+                </div>
+            </form>
+            <script src="js/Save.js"></script>
+        </div>   
+    </section>
+    <footer>
+        <p>
+            09-941 
+        </p>
+    </footer>
+</body>
+</html>
